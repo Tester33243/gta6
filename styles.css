@@ -1,0 +1,118 @@
+/* Set the background image to cover the full screen */
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrg1Vv_QwIZF0p8bDEtMzl5SXHdDSOBwfAg&s');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Sets text color to white for better contrast */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Makes the body fill the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers everything horizontally */
+}
+
+/* Styling for text elements */
+h1 {
+    margin-top: 50px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for readability */
+}
+
+p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Terms of Service styling */
+.terms-label {
+    display: block;
+    margin: 20px 0;
+}
+
+.terms-link {
+    color: #ffd700; /* Gold color for link */
+    text-decoration: none;
+}
+
+/* Button styles - Compact size with fixed width */
+.download-button,
+.support-button,
+.color-change-button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 14px; /* Smaller font size */
+    font-weight: normal;
+    color: #fff;
+    border: 1px solid #ccc; /* Simple border */
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px; /* Fixed width to prevent stretching */
+    text-align: center; /* Center the text inside the button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Styling for the download button */
+.download-button {
+    background-color: #007BFF; /* Default blue button */
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.download-button[disabled],
+.support-button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed; /* Show not-allowed cursor when disabled */
+    border: 1px solid #999;
+}
+
+/* Styling for the support button */
+.support-button {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+.support-button:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+.support-button:active {
+    transform: scale(0.95); /* Slight active effect */
+}
+
+/* Styling for the color change button */
+.color-change-button {
+    background-color: #ff0000; /* Red button by default */
+}
+
+.color-change-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.erase-page-button {
+    background-color: #ff0000; /* Red background for visibility */
+    color: white; /* White text for contrast */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px; /* Space around the button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.erase-page-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.erase-page-button:active {
+    background-color: #990000; /* Even darker red on click */
+}

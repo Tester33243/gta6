@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Download GTA6 NOW!</h1>
+    <p>100% virus free scanned with Avast</p>
+    <p>We have officially partnered with Rockstar</p>
+    
+    <label class="terms-label">
+        <input type="checkbox" id="terms-checkbox">
+        I accept the <a href="https://terms-fawn.vercel.app/" class="terms-link" target="_blank">Terms of Service</a>
+    </label>
+
+    <div class="buttons-container">
+        <a href="#" id="download-button" class="download-button" disabled onclick="redirectToDownload()">Download File</a>
+        
+
+        <button class="color-change-button" onclick="changeButtonColors()">Change All Button Colors</button>
+
+        <button class="clear-page-button" onclick="clearPageContent()">Clear Page</button>
+
+        <button class="show-video-button" onclick="redirectToVideo()">.......</button>
+    </div>
+
+    <script>
+        function changeButtonColors() {
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(function(button) {
+                button.style.backgroundColor = 'red';
+            });
+        }
+
+        function clearPageContent() {
+            document.body.innerHTML = '';
+        }
+
+        function redirectToVideo() {
+            window.location.href = "https://www.youtube.com/watch?v=uZpMmP5EUEI";
+        }
+
+        function redirectToDownload() {
+            window.location.href = "https://codeload.github.com/iamtraction/ZOD/zip/refs/heads/master";
+        }
+    </script>
+
+</body>
+</html>
